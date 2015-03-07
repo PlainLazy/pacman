@@ -19,9 +19,6 @@ package model {
 			switch (init_char) {
 				case null: case '0': { isWall = true; break; }
 				case '*': { isDot  = true; break; }
-				case '1': { break; }
-				case '2': { break; }
-				case '3': { break; }
 				case ' ': { break; }
 				default: { isWall = true; }
 			}
