@@ -93,6 +93,7 @@ package controller {
 			CONFIG::debug { lg('start'); }
 			
 			map1 = new MapModel();
+			cells_count = 0;
 			
 			var r:uint, rl:int;
 			var c:uint, cl:int;
@@ -159,6 +160,7 @@ package controller {
 				cell.dot = null;
 				cell.isDot = false;
 				cells_count--;
+				CONFIG::debug { lg(' cells_count=' + cells_count); }
 				if (cells_count == 0) {
 					gameOver('Ура!\nВсе желтые точки съедены!\nНо принцесса в другм замке ;)');
 				}
@@ -180,7 +182,7 @@ package controller {
 		}
 		
 		private function keyDownHr (e:KeyboardEvent):void {
-			CONFIG::debug { lg('keyDownHr'); }
+			//CONFIG::debug { lg('keyDownHr'); }
 			if (!is_started) { return; }
 			switch (e.keyCode) {
 				case Keyboard.LEFT: case Keyboard.RIGHT: case Keyboard.UP: case Keyboard.DOWN: {
@@ -193,7 +195,7 @@ package controller {
 		}
 		
 		private function keyUpHr (e:KeyboardEvent):void {
-			CONFIG::debug { lg('keyUpHr'); }
+			//CONFIG::debug { lg('keyUpHr'); }
 			switch (e.keyCode) {
 				case Keyboard.LEFT: case Keyboard.RIGHT: case Keyboard.UP: case Keyboard.DOWN: {
 					remove_value_from_vector(player_direction_strain_queue, e.keyCode);

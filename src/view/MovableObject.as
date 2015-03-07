@@ -64,7 +64,7 @@ package view {
 			var t:Number = now();
 			var pc:Number = (t - move_stime) / move_dtime;
 			if (pc >= 1) {
-				CONFIG::debug { lg(' moved from ' + cur_x + ',' + cur_y + ' to ' + dest_x + ',' + dest_y); }
+				//CONFIG::debug { lg(' moved from ' + cur_x + ',' + cur_y + ' to ' + dest_x + ',' + dest_y); }
 				cur_x = dest_x;
 				cur_y = dest_y;
 				inst.x = p1.x;
