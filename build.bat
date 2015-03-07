@@ -11,7 +11,7 @@ cd src
 -tools-locale=en -accessible=true -use-network=false -keep-generated-actionscript=false ^
 -incremental=false -debug=false -verbose-stacktraces=false -optimize=true -benchmark=true ^
 -creator="PlainLazy" ^
--default-size 480 360 -default-frame-rate 24 -default-background-color=0x000000 ^
+-default-size 480 360 -default-frame-rate 60 -default-background-color=0x000000 ^
 -target-player=14 -swf-version=25 ^
 -define=CONFIG::debug,false ^
 -static-link-runtime-shared-libraries=true ^
