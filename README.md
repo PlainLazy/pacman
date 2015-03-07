@@ -2,7 +2,7 @@
 
 зависимость https://github.com/AlternativaPlatform/Alternativa3D
 
-* pacman.as3proj - файл проект FlashDevelop
+* pacman.as3proj - файл проекта FlashDevelop
 * build.bat - сборка через mxmlc
 * src/Pacman.as - главный класс
 * www/index.html - морда
